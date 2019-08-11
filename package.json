@@ -1,0 +1,20 @@
+{
+    "name": "dance",
+    "version": "1.0.0",
+    "description": "",
+    "main": "app.js",
+    "dependencies": {},
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/szewah/dance.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/szewah/dance/issues"
+    },
+    "homepage": "https://github.com/szewah/dance#readme"
+}

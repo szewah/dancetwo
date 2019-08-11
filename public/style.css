@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a.nav-link {
+    padding-top: 20px;
+    color: white;
+}
+
+.fa-circle {
+    font-size: 60px;
+    color: #b91923;
+}
+
+#logo-text {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    position: fixed;
+    top: 28px;
+    left: 26px;
+}
+
+.dropdown-menu {
+    padding: 0 !important;
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+a.dropdown-item {
+    padding: 10px;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+#home {
+    width: 100%;
+    height: auto;
+}
+
+div.jumbotron {
+    background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url('./images/outsideDance3.png') top center;
+    height: 90vh;
+    background-repeat: no-repeat;
+    border-radius: 0;
+    margin-bottom: 0 !important;
+}
+
+.introText {
+    font-size: 50px !important;
+    color: white;
+    font-weight: 700;
+}
+
+#introTextP {
+    font-size: 30px;
+    color: white;
+    font-weight: 600;
+}
+
+#introImage {
+    width: 100%;
+}
+
+#introText {
+    position: relative;
+    top: -350px;
+    text-align: center;
+    color: white;
+}
+
+#introtagLine {
+    position: relative;
+    top: -350px;
+    text-align: center;
+    color: white;
+}
+
+#program-link {
+    padding-top: 50px;
+    color: white;
+    border-radius: 5px;
+}
+
+#about {
+    height: auto;
+    width: 100%;
+    background: #b91923;
+    padding-bottom: 50px;
+}
+
+#aboutContainer {
+    width: 80%;
+    padding-top: 40px;
+}
+
+#about-h4 {
+    margin-top: 50px;
+    text-align: center;
+    color: white;
+}
+
+#about-p {
+    padding-top: 18px;
+    padding-bottom: 40px;
+    text-align: center;
+    color: white;
+    font-size: 1.4em;
+    font-weight: 300;
+}
+
+#program {
+    height: auto;
+    width: 100%;
+    background: #E8E8E8;
+}
+
+#programContainer {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+#program-h4 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: 0;
+}
+
+#contact {
+    padding-top: 40px;
+    height: 100vh;
+    width: 100vw;
+}
+
+#contact-h4 {
+    margin-top: 20px;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+#form-container {
+    padding-top: 30px;
+    width: 50%;
+    margin: auto;
+}
+
+#btn-container {
+    display: flex;
+    justify-content: center;
+}
+
+#newsLetterBtn {
+    width: 50%;
+}
+
+#followUsContainer {
+    display: flex;
+    justify-content: center;
+}
+
+#follow-h4 {
+    margin-top: 60px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.fab {
+    font-size: 30px;
+    padding: 15px;
+}
+
+footer {
+    width: 100%;
+    background: #b91923;
+    color: white;
+    height: 80px;
+}
+
+#footerText {
+    padding-top: 30px;
+    text-align: center;
+}

@@ -1,0 +1,154 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+    <title>Dance for a Variable Population</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm navbar-light bg-light sticky-top">
+        <a class="navbar-brand" href="#">
+            <i class="fas fa-circle"></i>
+            <p id="logo-text">DVP</p>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="#" id="aboutDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ABOUT</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Our Mission</a>
+                        <a class="dropdown-item" href="#">Meet the Team</a>
+                        <a class="dropdown-item" href="#">Our Supporters</a>
+                        <a class="dropdown-item" href="#">Newsroom</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="#" id="programDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">PROGRAMS</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Free Programs</a>
+                        <a class="dropdown-item" href="#">Tuition Based Classes</a>
+                        <a class="dropdown-item" href="#">Public Performances</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">CALENDAR</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">CONTACT</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">DONATE</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="home">
+        <div class="jumbotron">
+            <br>
+            <h4 class="introText">DANCES FOR A VARIABLE POPULATION</h4>
+            <p id="introTextP">CREATIVE MOVEMENT FOR ALL ADULTS</p>
+        </div>
+    </section>
+    <section id="about">
+        <div id="aboutContainer" class="container">
+            <h3 id="about-h4">INSPIRING PEOPLE TO LIVE FULLY</h3>
+            <p id="about-p">
+                We believe in dance that engages communities as participants and audience members. Our lively, fun and free programs for adults, low cost classes and performances with beautifully crafted choreography improves the quality of life.
+            </p>
+            <div id="iframe-div" style="padding:56.25% 0 0 0;position:relative;">
+                <iframe src="https://player.vimeo.com/video/334309805?loop=1&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </section>
+    <section id="program">
+        <div id="programContainer" class="container">
+            <h3 id="program-h4">OUR PROGRAMS</h3>
+            <div id="program-col" class="row">
+                <div class="col-sm-4">
+                    <div class="card w-70">
+                        <img class="card-img-top" src="./images/danceclass.jpeg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Free programs</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-warning">Learn more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card w-70">
+                        <img class="card-img-top" src="./images/redjumperDance.jpeg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Tuition</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-warning">Learn more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card w-70">
+                        <img class="card-img-top" src="./images/outsidePerformance.jpeg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Performances</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-warning">Learn more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section id="contact">
+        <div id="form-container" class="container">
+            <h3 id="contact-h4">SIGN UP TO OUR NEWSLETTER</h3>
+            <form action="">
+                <div class="form-group">
+                    <input type="name" class="form-control" id="inputName" aria-describedby="name" placeholder="First Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="inputLastName" aria-describedby="lastName" placeholder="Last name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" class="form-control" id="inputEmail1" aria-describedby="email" placeholder="Email" required>
+                </div>
+            </form>
+            <div id="btn-container" class="container">
+                <button id="newsLetterBtn" type="submit" class="btn btn-warning">Sign Up</button>
+            </div>
+        </div>
+        <h4 id="follow-h4">Or follow us </h4>
+        <div id="followUsContainer" class="container">
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-vimeo-v"></i>
+            <i class="fab fa-youtube"></i>
+            <i class="fab fa-instagram"></i>
+        </div>
+
+    </section>
+    <footer class="footer">
+        <div id="footerContainer" class="container">
+            <p id="footerText">© 2019 DVP</p>
+        </div>
+    </footer>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
