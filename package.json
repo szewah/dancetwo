@@ -4,6 +4,7 @@
   "description": "One page prototype for an NGO. Goal is to show layout with content.",
   "main": "app.js",
   "dependencies": {
+    "dotenv": "^8.0.0",
     "express": "^4.17.1",
     "mysql2": "^1.6.5",
     "sequelize": "^5.13.1"
