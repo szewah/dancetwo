@@ -1,5 +1,8 @@
 "use strict";
 
-modeul.exports = function(sequelize, DataTypes) {
-    
+
+module.exports = function(sequelize, DataTypes) {
+    const Follower = sequelize.define("Follower", {
+        
+    })
 }
