@@ -1,8 +1,13 @@
-var express = require('express');
-var PORT = process.env.PORT || 8080;
+const express = require('express');
+const PORT = process.env.PORT || 8080;
 // var db = require ('./models');
+const bodyParser = require('body-parser');
+const logger = require('morgan');
+const http = require('http');
 
-var app = express();
+
+//set up express app
+const app = express();
 
 
 app.listen(PORT, function(err) {
