@@ -10,6 +10,11 @@ const http = require('http');
 const app = express();
 
 
+app.use(logger('dev'));
+
+app.use(bodyParser.urlencoded({ extended: false}));
+app.use(bodyParser.json());
+
 app.listen(PORT, function(err) {
     console.log('Magic is happeing on port http://localhost:' + PORT);
 })
