@@ -1,8 +1,14 @@
 const db = require('../models');
+const router = require('express').Router();
+
 
 module.exports = function(app) {
 
-    app.post('/', async(req, res) => {
+    router.get('/', function(req, res) {
+        res.sendFile(path.join(__dirname, "./public/index.html"))
+    });
+
+    router.post('/', async(req, res) => {
 
         db.User.create({
             firstName: req.body.name,

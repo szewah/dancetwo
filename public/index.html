@@ -112,15 +112,15 @@
     <section id="contact">
         <div id="form-container" class="container">
             <h3 id="contact-h4">SIGN UP TO OUR NEWSLETTER</h3>
-            <form action="">
+            <form action="/signups" method="post" id="addUser">
                 <div class="form-group">
-                    <input type="name" class="form-control" id="inputName" aria-describedby="name" placeholder="First Name" required>
+                    <input type="text" class="form-control" name="firstName" id="inputName" aria-describedby="name" placeholder="First Name" required>
                 </div>
                 <div class="form-group">
-                    <input type="text" class="form-control" id="inputLastName" aria-describedby="lastName" placeholder="Last name" required>
+                    <input type="text" class="form-control" name="lastName" id="inputLastName" aria-describedby="lastName" placeholder="Last name" required>
                 </div>
                 <div class="form-group">
-                    <input type="email" class="form-control" id="inputEmail1" aria-describedby="email" placeholder="Email" required>
+                    <input type="email" class="form-control" mame="email" id="inputEmail1" aria-describedby="email" placeholder="Email" required>
                 </div>
             </form>
             <div id="btn-container" class="container">
