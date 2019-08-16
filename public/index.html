@@ -114,18 +114,19 @@
             <h3 id="contact-h4">SIGN UP TO OUR NEWSLETTER</h3>
             <form action="/signups" method="post" id="addUser">
                 <div class="form-group">
-                    <input type="text" class="form-control" name="firstName" id="inputName" aria-describedby="name" placeholder="First Name" required>
+                    <input type="text" class="form-control" name="firstName" id="inputName" aria-describedby="name" placeholder="First Name">
                 </div>
                 <div class="form-group">
-                    <input type="text" class="form-control" name="lastName" id="inputLastName" aria-describedby="lastName" placeholder="Last name" required>
+                    <input type="text" class="form-control" name="lastName" id="inputLastName" aria-describedby="lastName" placeholder="Last name">
                 </div>
                 <div class="form-group">
-                    <input type="email" class="form-control" mame="userEmail" id="inputEmail" aria-describedby="email" placeholder="Email" required>
+                    <input type="email" class="form-control" mame="userEmail" id="inputEmail" aria-describedby="email" placeholder="Email">
+                </div>
+                <div id="btn-container" class="container">
+                    <button id="newsLetterBtn" type="submit" class="btn btn-warning">Sign Up</button>
                 </div>
             </form>
-            <div id="btn-container" class="container">
-                <button id="newsLetterBtn" type="submit" class="btn btn-warning">Sign Up</button>
-            </div>
+
         </div>
         <h4 id="follow-h4">Or follow us </h4>
         <div id="followUsContainer" class="container">
