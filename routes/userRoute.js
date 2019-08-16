@@ -2,11 +2,7 @@ const db = require('../models');
 
 module.exports = function(app) {
 
-    app.get('/signup', function(req, res) {
-        res.render("index")
-    });
-
-    app.post('/signup', async(req, res) => {
+    app.post('/', async(req, res) => {
 
         db.User.create({
             firstName: req.body.name,
