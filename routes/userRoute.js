@@ -1,23 +1,21 @@
-const db = require('../models/user');
+const db = require('../models');
 const router = require('express').Router();
 
 
 
-module.exports = function(app) {
+module.exports = (app) => {
 
-    router.get('/', function(req, res) {
-        res.sendFile(path.join(__dirname, "./public/index.html"))
+    router.get('/', (req, res) => {
+        res.sendFile(path.join(__dirname, "./index.html"))
     });
 
     // POST route for saving a new user
-    router.post('/signups', function(req, res) {
+    router.post('/api/signups', async(req, res) => {
         console.log(req,body);
-        const {firstName, lastName, userEmail} = req.body;
-
         db.User.create({
-            firstName: firstName,
-            lastName: lastName,
-            email: userEmail
+            firstName: req.body.firstName,
+            lastName: req.body.lastName,
+            email: req.body.userEmail
         }).then(function(results) {
             res.json(results)
         });
