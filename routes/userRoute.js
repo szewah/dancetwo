@@ -8,14 +8,14 @@ module.exports = function(app) {
         res.sendFile(path.join(__dirname, "./public/index.html"))
     });
 
-    router.post('/', async(req, res) => {
+    router.post('/signups', async(req, res) => {
 
         db.User.create({
-            firstName: req.body.name,
+            firstName: req.body.firstName,
             lastName: req.body.lastName,
-            email: req.body.usereEmail
+            email: req.body.userEmail
         }).then(function(results) {
-            console.log(results);
+            res.send("Post made");
         });
     });
 

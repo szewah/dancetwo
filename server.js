@@ -27,5 +27,5 @@ app.use(bodyParser.json());
 app.use(routes);
 
 app.listen(PORT, function(err) {
-    console.log('Magic is happeing on port http://localhost:' + PORT);
+    console.log('Magic is happening on port http://localhost:' + PORT);
 })
