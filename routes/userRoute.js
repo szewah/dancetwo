@@ -23,6 +23,7 @@ module.exports = function(app) {
         });
     });
 
+    //GET route for finding all users
     router.get('/signups', function(req, res) {
         db.User.findAll().then(function(results) {
             res.json(results)
