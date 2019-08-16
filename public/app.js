@@ -16,7 +16,7 @@ $("#newsLetterBtn").on("click", function(event) {
             console.log(inputObj, inputObj2, inputObj3);
             $("#inputName").val("");
             $("#inputLastName").val("");
-            $("#inputEmail").val("")
+            $("#inputEmail").val("");
         }
         return addedInput;
     });

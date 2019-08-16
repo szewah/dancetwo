@@ -1,5 +1,6 @@
-const db = require('../models');
+const db = require('../models/user');
 const router = require('express').Router();
+
 
 
 module.exports = function(app) {
@@ -8,15 +9,24 @@ module.exports = function(app) {
         res.sendFile(path.join(__dirname, "./public/index.html"))
     });
 
-    router.post('/signups', async(req, res) => {
+    // POST route for saving a new user
+    router.post('/signups', function(req, res) {
+        console.log(req,body);
+        const {firstName, lastName, userEmail} = req.body;
 
         db.User.create({
-            firstName: req.body.firstName,
-            lastName: req.body.lastName,
-            email: req.body.userEmail
+            firstName: firstName,
+            lastName: lastName,
+            email: userEmail
         }).then(function(results) {
-            res.send("Post made");
+            res.json(results)
         });
+    });
+
+    router.get('/signups', function(req, res) {
+        db.User.findAll().then(function(results) {
+            res.json(results)
+        })  
     });
 
 };
